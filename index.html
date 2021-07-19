@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      $("#skillbar_php").animate({ width: '85%' }, 1500);
+      $("#skillbar_asp").animate({ width: '55%' }, 1500);
+      $("#skillbar_jsp").animate({ width: '75%' }, 1500);
+
+    });
+  </script>
+
+  <title>My Portfolio Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="navigation">
+      <div class="nav-center d-flex">
+        <h2 class="logo d-flex">
+          <span class="color">D.A</span>
+          <span>Dev_Ashu</span>
+        </h2>
+
+        <ul class="nav-list d-flex">
+          <li class="nav-item">
+            <a href="#header" class="nav-link scroll-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link scroll-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link scroll-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link scroll-link">Portfolio</a>
+          </li>
+          <li class="nav-item"><a href="#blog" class="nav-link scroll-link">Blog</a></li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link scroll-link">Contact</a>
+          </li>
+
+          <!-- Theme -->
+          <li class="nav-item theme-icon">
+            <i class="bx bx-moon"></i>
+          </li>
+
+          <!-- Close Button -->
+          <div class="close">
+            <i class="bx bx-x"></i>
+          </div>
+        </ul>
+
+        <!-- theme -->
+        <div class="theme theme-icon">
+          <i class="bx bx-moon"></i>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="hamburger">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Hero Image -->
+    <img src="./images/KingAshu.png" class="hero-img" alt="hero" />
+    <!-- Social Links -->
+    <div class="socials">
+      <span class="icon"><a href="https://www.instagram.com/ashutosh_mohanty_99_not_out/"><i
+            class="bx bxl-instagram"></i></a></span>
+      <span class="icon"><a href="https://www.facebook.com/ashutosh.mohanty.58958"><i
+            class="bx bxl-facebook"></i></a></span>
+      <span class="icon"><a href="https://github.com/Ashutosh102"><i class="bx bxl-github"></i></a></span>
+      <span class="icon"><a href="https://www.linkedin.com/in/ashutosh-mohanty-3464a6204"><i
+            class="bx bxl-linkedin"></i></a></span>
+      <span class="icon"><a href="https://twitter.com/Ashutos56695774?s=09"><i class="bx bxl-twitter"></i></a></span>
+    </div>
+
+
+    <!-- Color Control -->
+    <div class="control">
+      <div class="widget d-flex">
+        <i class="bx bxs-cog"></i>
+      </div>
+      <div class="colors">
+        <span data-id="#f88d00"></span>
+        <span data-id="#42caff"></span>
+        <span data-id="#7462e1"></span>
+        <span data-id="#ff4600"></span>
+        <span data-id="#ce00ff"></span>
+      </div>
+    </div>
+
+    <!-- Hero -->
+
+    <div class="content">
+      <span>Hello👋👋🏼</span>
+      <h1>Am Ashutosh </h1>
+      <h1 style="text-shadow: 3px 3px 3px gold;">a <span id="type1"></span></h1>
+      <p style="text-shadow: 3px 3px 3px gray;">
+        A coder and Developer who started his journey with B.tech in GIETU. I'm a experienced coder and you can connect
+        with
+        me on GitHub and can access my opensource contribution.
+      </p>
+      <p style="text-shadow: 3px 3px 3px gray;">
+        Overall 'The jack of all trades',
+      </p>
+      <p style="text-shadow: 3px 3px 3px gray;">
+        Who knows everything but,
+      </p>
+      <p style="text-shadow: 3px 3px 3px grey;">
+        mastered limited
+      </p>
+      <a href="https://github.com/Ashutosh102" class="btn btn-hero">GitHub</a>
+    </div>
+  </header>
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-center d-flex">
+        <div class="col-1" data-aos="fade-right" data-aos-duration="1300">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill-rule: evenodd;
+                }
+              </style>
+            </defs>
+            <path class="cls-1"
+              d="M348.966,185.028C352.5,133.656,390.75,98.4,408.679,84.919c65.653-49.37,156.979-31.683,212.511,6.147,66.582,45.359,84.381,124.626,87.814,168.6,11.7,149.93-115.48,312.737-230.073,307.349-36.811-1.731-88.125-21.605-104.5-62.348-21.744-54.1,38.923-101.571,32.491-167.725C400.873,274.711,344.529,249.615,348.966,185.028Z" />
+            <img src="./images/About_ashu.png" alt="">
+          </svg>
+        </div>
+        <div class="col-2" data-aos="fade-left" data-aos-duration="1300">
+          <div class="title">
+            <span>Want to know</span>
+            <h1 style="text-shadow: 3px 3px 3px gold;">About me</h1>
+          </div>
+
+          <h3 style="text-shadow: 3px 3px 3px gray;">A story of Hardwork and Perserverance</h3>
+          <p>A student from CSE background.....a efficient programmer, developer and opensource
+            contributor. Pretty good in DSA and having hand over otherskills. Like...graphics designing,
+            Sketching, UI/UX design etc. Moreover, you can say "The jack of all trades", who have
+            learned everything but, mastered limited.A great coder and a self motivator, who will never
+            lose hope and will try his best to accomplish all tasks and projects. And last ,but not the
+            least....a quick learner, who will always come in handy while talking about the latest
+            technology, changing everyday.</p>
+          <h2 style="text-shadow: 3px 3px 3px gray;">Contact</h2>
+
+          <div class="right" data-aos="fade-left" data-aos-duration="1300">
+            <div>
+              <span class="icon"><i class="bx bx-user"></i></span>
+              <span class="content">
+                <h3 style="text-shadow: 3px 3px 3px gray;">Name</h3>
+                <span>Ashutosh Mohanty</span>
+              </span>
+            </div>
+            <div>
+              <span class="icon"><i class="bx bx-map"></i></span>
+              <span class="content">
+                <h3 style="text-shadow: 3px 3px 3px gray;">Address</h3>
+                <span>Plot no.-1125, Tankpani road,</span>
+                <span> Vishnu Nagar, Bhubanshwar, Odisha, India</span>
+              </span>
+            </div>
+            <div>
+              <span class="icon"><i class="bx bx-envelope"></i></span>
+              <span class="content">
+                <h3 style="text-shadow: 3px 3px 3px gray;">Email</h3>
+                <span>ashutoshmohanty3815@gmail.com</span>
+              </span>
+            </div>
+            <div>
+              <span class="icon"><i class="bx bxl-github"></i></span>
+              <span class="content">
+                <h3 style="text-shadow: 3px 3px 3px gray;">GitHub</h3>
+                <span>https://github.com/Ashutosh102</span>
+              </span>
+            </div>
+          </div>
+
+
+
+          <div class="buttons">
+
+            <a href="mailto:ashutoshmohanty3815@gmail.com" rel="nofollow" class="btn btn-hero">CONTACT
+              ME</a>
+
+            <a href="Dev_Ashu_resume.pdf" class="btn outline">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </section>
+  <!-- Services -->
+  <section class="section services" id="services">
+    <div class="title">
+      <h1>My skills</h1>
+    </div>
+    <center>
+      <div class="col" data-aos="fade-right" data-aos-duration="1300">
+        <div class="wrapper">
+
+          <div class="card">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">HTML & CSS</div>
+          </div>
+
+          <div class="card js">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">JavaScript</div>
+          </div>
+          <div class="card react">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">React JS</div>
+          </div>
+
+          <div class="card node">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">Node JS</div>
+          </div>
+          <div class="card python">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">Python</div>
+          </div>
+          <div class="card c">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">C</div>
+          </div>
+        </div>
+      </div>
+    </center>
+
+    <script>
+      let options = {
+        startAngle: -1.55,
+        size: 150,
+        value: 0.85,
+        fill: { gradient: ['#a445b2', '#fa4299'] }
+      }
+      $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+        function (event, progress, stepValue) {
+          $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+        });
+      $(".js .bar").circleProgress({
+        value: 0.70
+      });
+      $(".react .bar").circleProgress({
+        value: 0.60
+      });
+    </script>
+
+    <div class="title">
+      <span>Services I provide</span>
+      <h1>Services</h1>
+    </div>
+
+    <div class="row container">
+      <div class="col" data-aos="fade-right" data-aos-duration="1300">
+        <div class="icon"><i class="bx bx-bulb"></i></div>
+        <span>23 Projects</span>
+        <h3>UI & UX Design</h3>
+        <p>
+          A quite good UI/UX designer with quite good responsiveness. Can efficienly use Adobe XD, Figma and Sketch.
+          Created many UI/UX designs using Adobe XD
+
+        </p>
+      </div>
+
+      <div class="col" data-aos="fade-up" data-aos-duration="1300">
+        <div class="icon"><i class="bx bx-layer"></i></div>
+        <span>36 Projects</span>
+        <h3>Graphic Design</h3>
+        <p>
+          Pretty good graphic designer with the knowledge of Photoshop, Illustrator and After-Effects. Aquainted with all the tools.
+        </p>
+      </div>
+      <div class="col" data-aos="fade-left" data-aos-duration="1300">
+        <div class="icon"><i class="bx bx-desktop"></i></div>
+        <span>42 Project</span>
+        <h3>Web Design/wordpress</h3>
+        <p>
+          An efficient web designer. Created many projects using Dreamweaver, Wordpress and
+          Bootstrap. Always cleaver in less work and more results.
+        </p>
+      </div>
+      <div class="col" data-aos="fade-left" data-aos-duration="1300">
+        <div class="icon"><i class="bx bx-code"></i></div>
+        <span>52 Project</span>
+        <h3>Web Development</h3>
+        <p>
+          An full-stack web developer with the knowledge of front-end and backend. Started with basics HTML/CSS/JS and learned PHP, Node JS, React JS, MongoDB and many more👍🏼👍🏼.
+        </p>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- Porfolio -->
+  <section class="section portfolio" id="portfolio">
+    <div class="row container">
+      <div class="title">
+        <span>My Dev Portfolio</span>
+        <h1>Portfolio</h1>
+      </div>
+
+      <div class="filter-btns d-flex">
+        <span class="active" data-id="all">All</span>
+        <span data-id="webDesign">Web Design</span>
+        <span data-id="UIDesign">UI/UX design Design</span>
+        <span data-id="graphicDesign">Graphic Design</span>
+        <span data-id="webApps">Web Apps</span>
+      </div>
+    </div>
+
+    <div class="projects container" data-aos="fade-up" data-aos-duration="1300">
+       
+      <a href="https://dev-shop-ecommerce.herokuapp.com/"><img data-id="webDesign" src="./images/DEVshop.png" class="item" alt=""></a>
+      <a href="Dev_Ashu_resume.pdf"><img data-id="graphicDesign" src="./images/Copy of ASHUTOSH MOHANTY-1.png" class="item" alt=""></a>
+      <a href="https://age-culator.herokuapp.com/"><img data-id="webApps" src="./images/Screenshot (229).png" class="item" alt=""></a>
+      <a href="https://devcam-v3.herokuapp.com/"><img data-id="webApps" src="./images/Screenshot (434).png" class="item" alt=""></a>
+      <a href="https://devchat-v3.herokuapp.com/"><img data-id="webApps" src="./images/Screenshot (259).png" class="item" alt=""></a>
+      <a href="https://covid-dashboard-pro.herokuapp.com/"><img data-id="webApps" src="./images/Covid_Dash.png" class="item" alt=""></a>
+      <a href="https://ashutoshmohanty381.wixsite.com/website-2"><img data-id="UIDesign" src="./images/Screenshot (433).png" class="item" alt=""></a>
+      <a href="https://dev-online-compiler.herokuapp.com/"><img data-id="webApps" src="./images/Screenshot (225).png" class="item" alt=""></a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials">
+    <div class="container test-center">
+      <div class="left" data-aos="fade-up" data-aos-duration="1300">
+        <img src="./images/PicsArt_07-19-07.33.39.png" alt="">
+      </div>
+
+      <div class="right right-swiper swiper-container" data-aos="fade-down" data-aos-duration="1300">
+        <div class="title">
+          <span>Client's reaction</span>
+          <h1>Testimonials</h1>
+        </div>
+
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p>Ashu is really a good developer. He is great at what he is doing. The portfolio UI is very smooth and attractive</p>
+            <h4>Ayush Sharma</h4>
+            <span>Web Developer</span>
+          </div>
+          <div class="swiper-slide">
+            <p>Great work, great guy with a great mind. The best point about ashu is, that he always make things cool, interesting and much simpler.</p>
+            <h4>Devi Prasad Mishra</h4>
+            <span>Graphic Designer</span>
+          </div>
+          <div class="swiper-slide">
+            <p>Really attractive, this is. Ashu, this time you came up with a new and interesting idea.</p>
+            <h4>Ankit Raj</h4>
+            <span>React Developer</span>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev">
+          <i class="bx bxs-left-arrow-alt swiper-icon"></i>
+        </div>
+        <div class="swiper-button-next">
+          <i class="bx bxs-right-arrow-alt swiper-icon"></i>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="section blog" id="blog">
+    <div class="title">
+      <span>Some Blogs to follow</span>
+      <h1>Blog</h1>
+    </div>
+
+    <div class="row container">
+      <div class="col" data-aos="fade-right" data-aos-duration="1300">
+        <img src="./images/app4.jpg" alt="">
+        <h3>UI & UX new Designer Trend 2021</h3>
+        <p>Top UI/UX design blogs.</p>
+        <a href="https://www.figmints.com/blog/ui-ux-design-blogs/">Read more</a>
+      </div>
+      <div class="col" data-aos="fade-down" data-aos-duration="1300">
+        <img src="./images/web2.jpg" alt="">
+        <h3>Web Development new era</h3>
+        <p>Top Web Dev blogs</p>
+        <a href="https://massivepixel.io/blog/web-development-blogs/">Read more</a>
+      </div>
+      <div class="col" data-aos="fade-left" data-aos-duration="1300">
+        <img src="./images/web1.jpg" alt="">
+        <h3>Best Free Hosting Providers 2021</h3>
+        <p>Host your site for free</p>
+        <a href="https://hostingtribunal.com/free/hosting-providers/">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <div class="contact-upper" id="contact">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+      <path fill-opacity="1"
+        d="M0,160L48,165.3C96,171,192,181,288,186.7C384,192,480,192,576,165.3C672,139,768,85,864,58.7C960,32,1056,32,1152,53.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+  <section class="section contact">
+    <div class="title">
+      <span>If you are interested, then</span>
+      <h1>Contact me</h1>
+    </div>
+
+    <div class="contact-center container">
+      
+
+      <div class="right" data-aos="fade-left" data-aos-duration="1300">
+        <div>
+          <span class="icon"><i class="bx bx-user"></i></span>
+          <span class="content">
+            <h3>Name</h3>
+            <span>Ashutosh Mohanty</span>
+          </span>
+        </div>
+        <div>
+          <span class="icon"><i class="bx bx-map"></i></span>
+          <span class="content">
+            <h3>Address</h3>
+            <span>Plot no.-1125, Tankpani road, Vishnu Nagar, Bhubanshwar, Odisha, India</span>
+          </span>
+        </div>
+        <div>
+          <span class="icon"><i class="bx bx-envelope"></i></span>
+          <span class="content">
+            <h3>Email</h3>
+            <span>ashutoshmohanty3815@gmail.com</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="right" data-aos="fade-left" data-aos-duration="1300">
+        <div class="mapouter">
+          <div class="gmap_canvas"><iframe width="1200" height="500" id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Bishnu%20nagar,Bhubaneswar,odisha&t=k&z=15&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+              href="https://soap2day-to.com"></a><br>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 300px;
+                width: 300px;
+              }
+            </style><a href="https://www.embedgooglemap.net">google map on my website</a>
+            <style>
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 300px;
+                width: 300px;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+
+      <center><div class="left" data-aos="fade-right" data-aos-duration="1300">
+        <form class="form">
+          <center><h2>Message me</h2></center>
+          <center>
+            <h3>In this world of growing technology, if you wanna grow more, you need to have a good network. So, any project in mind......feel free to contact me...I will always be there</h3>
+          </center>
+          <div class="call_to_action_btn">
+          <center><button href="#about" rel="nofollow" class="btn btn-hero">Send mail</button></center>
+        </div>
+        </form>
+      </div></center>
+
+
+    </div>
+    
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy copyright 2021 <a href="https://github.com/Ashutosh102" class="btn btn-form" style="background-color:red;
+      border: 3px solid gold;
+      border-radius: 6px;">Dev_Ashu</a></p>
+  </footer>
+  <!-- Swiper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Typeit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+  <!-- Custom Script -->
+  <script src="index.js"></script>
+
+</body>
+
+</html>
