@@ -1147,3 +1147,150 @@ footer {
     width: 100%;
   }
 }
+.github-pinner {
+  background-color: rgb(0, 0, 0);
+  border: 3px solid #5eff00;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.github-pinner.gp-profile {
+  width: 400px;
+  height: 200px;
+}
+
+.github-pinner.gp-repo {
+  width: 300px;
+}
+
+.github-pinner.gp-all {
+  background-color: rgb(0, 0, 0);
+  border-radius: 3px;
+  width: 600px;
+  height: 900px;
+}
+
+/* MARK: - Profile Styling */
+.github-pinner #gp-container-profile {
+  position: relative;
+}
+
+.github-pinner #gp-container-profile a > #gp-avatar {
+  user-select: none;
+  display: inline-block;
+  vertical-align: top;
+  width: 500px; 
+  /* 80px if bio exists */
+  /* 60px else */
+  border-radius: 20px;
+}
+
+.github-pinner #gp-container-profile > #gp-information {
+  width: calc(100% - 80px - 15px);
+  display: inline-block;
+  overflow: auto;
+  margin-left: 10px;
+}
+
+.github-pinner #gp-container-profile > #gp-information > .gp-element {
+  display: block;
+}
+
+.github-pinner #gp-container-profile > #gp-information .gp-link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.github-pinner #gp-container-profile > #gp-information .gp-link > .gp-name:hover, .github-pinner #gp-container-profile > #gp-information .gp-link > .gp-user:hover {
+  cursor: pointer;
+  color: #7ee903;
+}
+
+.github-pinner #gp-container-profile > #gp-information .gp-link > .gp-name {
+  font-weight: 600;
+  font-size: 20px;
+  color:#6be903;
+}
+
+.github-pinner #gp-container-profile > #gp-information .gp-link > .gp-user {
+  display: block;
+  font-size: 16px;
+  color: rgb(218, 152, 10);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.github-pinner #gp-container-profile > #gp-information > .gp-bio {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.github-pinner #gp-container-profile .gp-btn:hover {
+    background-color: #e6ebf1;
+    background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
+    background-position: 0 -0.5em;
+    border-color: rgba(27,31,35,0.35);
+}
+
+.github-pinner #gp-container-profile .gp-btn {
+    margin-top: 6px;
+    width: 100px;
+    float: right;
+    text-decoration: none;
+    text-align: center;
+    background-repeat: repeat-x;
+    background-position: -1px -1px;
+    background-size: 110% 110%;
+    border: 1px solid rgba(27,31,35,0.2);
+    border-radius: 0.25em;
+    -webkit-appearance: none;
+    user-select: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #24292e;
+    background-color: #3eda00;
+    background-image: linear-gradient(-180deg, #299e05 0%, #45d801 90%);
+}
+
+.github-pinner #gp-container-profile > .gp-stats {
+  display: block;
+  margin-top: 8px;
+}
+
+.github-pinner #gp-container-profile > .gp-stats .gp-stat {
+  text-decoration: none;
+  width: 70px;
+  border-right: 1px solid #00e200;
+  color: #bec0c2;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 6px;
+  margin-top: 5px;
+}
+
+.github-pinner #gp-container-profile > .gp-stats .gp-stat:last-of-type {
+  border-right: none;
+}
+
+.github-pinner #gp-container-profile > .gp-stats .gp-stat:hover .gp-stat-desc, .github-pinner #gp-container-profile > .gp-stats .gp-stat:hover .gp-stat-val {
+  color: #23d603;
+}
+
+.github-pinner #gp-container-profile > .gp-stats .gp-stat-val {
+  color: #bdbfc0;
+  font-size: 19px;
+  text-align: center;
+  display: block;
+}
+.github-pinner #gp-container-profile > .gp-stats .gp-stat-desc {
+  color: #14da02;
+  font-size: 11px;
+  text-align: center;
+  display: block;
+}
